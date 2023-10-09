@@ -1,0 +1,16 @@
+
+
+
+<% @messages.each do |message| %>
+<div class="col">
+<div class="  card bg-dark mt-5 col-3 mx-auto ">
+    <div class="card-title text-light gw-bold mx-5">
+        <h3><b><%= message.title %></h3>
+        <div class="card-body btn btn-outline-primary bg-light">
+              <%= link_to 'View', message_path(message) %>
+        </div>
+    </div>
+</div>
+ <% end %>
+ 
+
